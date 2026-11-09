@@ -1,11 +1,12 @@
 import json
+import os
 import requests
 import streamlit as st
 
 from mistralai import Mistral
 
 # Set your API key and agent ID for the Mistral API
-api_key = "9xI84xYuI7PIabGQ3KvtxYhhXz9P5SYP"
+api_key = os.environ["MISTRAL_API_KEY"]
 # model = "mistral-large-latest"
 agent_id = "ag:68998b79:20241012:untitled-agent:5aec32b4"
 
